@@ -3,7 +3,8 @@ const cubemain = D2RMM.readTsv(cubemainFilename);
 
 if (config.easierToken) {
   cubemain.rows.push({
-    description: "Tome of Town Portal + Tome of Identify -> Token of Absolution",
+    description:
+      "Tome of Town Portal + Tome of Identify -> Token of Absolution",
     enabled: 1,
     version: 100,
     numinputs: 2,
@@ -78,6 +79,22 @@ if (config.easierRunes) {
       "*eol": 0,
     });
   }
+}
+
+if (config.easierCowPortal) {
+  cubemain.rows.every((row) => {
+    if (
+      row.description ==
+      "Wirt's Leg + Tome of Town Portal -> Portal to The Secret Cow Level"
+    ) {
+      row.description =
+        "Scroll of Identify + Tome of Town Portal -> Portal to The Secret Cow Level";
+      row["input 1"] = "isc";
+      return false;
+    }
+
+    return true;
+  });
 }
 
 D2RMM.writeTsv(cubemainFilename, cubemain);
