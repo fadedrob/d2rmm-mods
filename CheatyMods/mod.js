@@ -97,6 +97,36 @@ if (config.easierCowPortal) {
   });
 }
 
+if (config.convertPandemoniumKeys) {
+  cubemain.rows.push({
+    description: "Key of Terror -> Key of Hate",
+    enabled: 1,
+    version: 100,
+    numinputs: 1,
+    "input 1": "pk1",
+    output: "pk2",
+    "*eol": 0,
+  });
+  cubemain.rows.push({
+    description: "Key of Hate -> Key of Destruction",
+    enabled: 1,
+    version: 100,
+    numinputs: 1,
+    "input 1": "pk2",
+    output: "pk3",
+    "*eol": 0,
+  });
+  cubemain.rows.push({
+    description: "Key of Destruction -> Key of Terror",
+    enabled: 1,
+    version: 100,
+    numinputs: 1,
+    "input 1": "pk3",
+    output: "pk1",
+    "*eol": 0,
+  });
+}
+
 D2RMM.writeTsv(cubemainFilename, cubemain);
 
 const monstatsFilename = "global\\excel\\monstats.txt";
