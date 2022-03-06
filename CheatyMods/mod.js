@@ -132,12 +132,12 @@ D2RMM.writeTsv(cubemainFilename, cubemain);
 const monstatsFilename = "global\\excel\\monstats.txt";
 const monstats = D2RMM.readTsv(monstatsFilename);
 
-if (config.levelingMultiplier > 1) {
+if (config.levelingMultiplier != 100) {
   monstats.rows.forEach((row) => {
     if (row.Exp) {
-      row["Exp"] = Math.floor(row["Exp"] * config.levelingMultiplier);
-      row["Exp(N)"] = Math.floor(row["Exp(N)"] * config.levelingMultiplier);
-      row["Exp(H)"] = Math.floor(row["Exp(H)"] * config.levelingMultiplier);
+      row["Exp"] = Math.floor(row["Exp"] * (config.levelingMultiplier / 100));
+      row["Exp(N)"] = Math.floor(row["Exp(N)"] * (config.levelingMultiplier / 100));
+      row["Exp(H)"] = Math.floor(row["Exp(H)"] * (config.levelingMultiplier / 100));
     }
   });
 }
