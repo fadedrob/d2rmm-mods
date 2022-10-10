@@ -1,2 +1,5 @@
 # Configs
 config.json
+
+# 7zipped
+*.7z
