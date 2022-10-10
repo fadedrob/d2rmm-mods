@@ -1,6 +1,0 @@
-{
-    "type": "TitleScreenHDPanel", "name": "LoadScreenPanel",
-    "fields": {
-        "fitToParent": true,
-    },
-}
