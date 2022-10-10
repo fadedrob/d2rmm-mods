@@ -1,20 +1,16 @@
 const charstatsFilename = "global\\excel\\charstats.txt";
 const charstats = D2RMM.readTsv(charstatsFilename);
 
-if (config.statCheck) {
-  charstats.rows.forEach((row) => {
-    if (row.StatPerLevel !== "") {
-      row.StatPerLevel = config.statPoints;
-    }
-  });
-}
+charstats.rows.forEach((row) => {
+  if (row["StatPerLevel"] !== "") {
+    row["StatPerLevel"] = config.statPoints;
+  }
 
-if (config.skillCheck) {
-  charstats.rows.forEach((row) => {
-    if (row.SkillsPerLevel !== "") {
-      row.SkillsPerLevel = config.skillPoints;
-    }
-  });
-}
+  if (row["SkillsPerLevel"] !== "") {
+    row["SkillsPerLevel"] = config.skillPoints;
+
+    return false;
+  }
+});
 
 D2RMM.writeTsv(charstatsFilename, charstats);
