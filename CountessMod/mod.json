@@ -1,0 +1,240 @@
+{
+  "name": "Countess Mods",
+  "description": "Makes changes to Countess Rune drops.",
+  "author": "fadedRob",
+  "website": "https://github.com/fadedRob/d2rmm-mods",
+  "version": "1.0",
+  "config": [
+    {
+      "id": "countessNormalRunes",
+      "type": "select",
+      "name": "Normal Countess Drop",
+      "description": "Determines the maximum rune that will drop from Normal Countess. Default: Up to Ral (8)",
+      "defaultValue": "Runes 4",
+      "options": [
+        {
+          "value": "Runes 1",
+          "label": "Up to Eld (2)"
+        },
+        {
+          "value": "Runes 2",
+          "label": "Up to Nef (4)"
+        },
+        {
+          "value": "Runes 3",
+          "label": "Up to Ith (6)"
+        },
+        {
+          "value": "Runes 4",
+          "label": "Up to Ral (8)"
+        },
+        {
+          "value": "Runes 5",
+          "label": "Up to Thul (10)"
+        },
+        {
+          "value": "Runes 6",
+          "label": "Up to Amn (12)"
+        },
+        {
+          "value": "Runes 7",
+          "label": "Up to Dol (14)"
+        },
+        {
+          "value": "Runes 8",
+          "label": "Up to Io (16)"
+        },
+        {
+          "value": "Runes 9",
+          "label": "Up to Ko (18)"
+        },
+        {
+          "value": "Runes 10",
+          "label": "Up to Lem (20)"
+        },
+        {
+          "value": "Runes 11",
+          "label": "Up to Um (22)"
+        },
+        {
+          "value": "Runes 12",
+          "label": "Up to Ist (24)"
+        },
+        {
+          "value": "Runes 13",
+          "label": "Up to Vex (26)"
+        },
+        {
+          "value": "Runes 14",
+          "label": "Up to Lo (28)"
+        },
+        {
+          "value": "Runes 15",
+          "label": "Up to Ber (30)"
+        },
+        {
+          "value": "Runes 16",
+          "label": "Up to Cham (32)"
+        },
+        {
+          "value": "Runes 17",
+          "label": "Up to Zod (33)"
+        }
+      ]
+    },
+    {
+      "id": "countessNightmareRunes",
+      "type": "select",
+      "name": "Nightmare Countess Drop",
+      "description": "Determines the maximum rune that will drop from Nightmare Countess. Default: Up to Io (16)",
+      "defaultValue": "Runes 8",
+      "options": [
+        {
+          "value": "Runes 1",
+          "label": "Up to Eld (2)"
+        },
+        {
+          "value": "Runes 2",
+          "label": "Up to Nef (4)"
+        },
+        {
+          "value": "Runes 3",
+          "label": "Up to Ith (6)"
+        },
+        {
+          "value": "Runes 4",
+          "label": "Up to Ral (8)"
+        },
+        {
+          "value": "Runes 5",
+          "label": "Up to Thul (10)"
+        },
+        {
+          "value": "Runes 6",
+          "label": "Up to Amn (12)"
+        },
+        {
+          "value": "Runes 7",
+          "label": "Up to Dol (14)"
+        },
+        {
+          "value": "Runes 8",
+          "label": "Up to Io (16)"
+        },
+        {
+          "value": "Runes 9",
+          "label": "Up to Ko (18)"
+        },
+        {
+          "value": "Runes 10",
+          "label": "Up to Lem (20)"
+        },
+        {
+          "value": "Runes 11",
+          "label": "Up to Um (22)"
+        },
+        {
+          "value": "Runes 12",
+          "label": "Up to Ist (24)"
+        },
+        {
+          "value": "Runes 13",
+          "label": "Up to Vex (26)"
+        },
+        {
+          "value": "Runes 14",
+          "label": "Up to Lo (28)"
+        },
+        {
+          "value": "Runes 15",
+          "label": "Up to Ber (30)"
+        },
+        {
+          "value": "Runes 16",
+          "label": "Up to Cham (32)"
+        },
+        {
+          "value": "Runes 17",
+          "label": "Up to Zod (33)"
+        }
+      ]
+    },
+    {
+      "id": "countessHellRunes",
+      "type": "select",
+      "name": "Hell Countess Drop",
+      "description": "Determines the maximum rune that will drop from Hell Countess. Default: Up to Ist (24)",
+      "defaultValue": "Runes 12",
+      "options": [
+        {
+          "value": "Runes 1",
+          "label": "Up to Eld (2)"
+        },
+        {
+          "value": "Runes 2",
+          "label": "Up to Nef (4)"
+        },
+        {
+          "value": "Runes 3",
+          "label": "Up to Ith (6)"
+        },
+        {
+          "value": "Runes 4",
+          "label": "Up to Ral (8)"
+        },
+        {
+          "value": "Runes 5",
+          "label": "Up to Thul (10)"
+        },
+        {
+          "value": "Runes 6",
+          "label": "Up to Amn (12)"
+        },
+        {
+          "value": "Runes 7",
+          "label": "Up to Dol (14)"
+        },
+        {
+          "value": "Runes 8",
+          "label": "Up to Io (16)"
+        },
+        {
+          "value": "Runes 9",
+          "label": "Up to Ko (18)"
+        },
+        {
+          "value": "Runes 10",
+          "label": "Up to Lem (20)"
+        },
+        {
+          "value": "Runes 11",
+          "label": "Up to Um (22)"
+        },
+        {
+          "value": "Runes 12",
+          "label": "Up to Ist (24)"
+        },
+        {
+          "value": "Runes 13",
+          "label": "Up to Vex (26)"
+        },
+        {
+          "value": "Runes 14",
+          "label": "Up to Lo (28)"
+        },
+        {
+          "value": "Runes 15",
+          "label": "Up to Ber (30)"
+        },
+        {
+          "value": "Runes 16",
+          "label": "Up to Cham (32)"
+        },
+        {
+          "value": "Runes 17",
+          "label": "Up to Zod (33)"
+        }
+      ]
+    }
+  ]
+}
